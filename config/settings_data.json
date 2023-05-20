@@ -1,3 +1,41 @@
 {
-  "current": {}
+  "current": {
+    "checkout_logo_image": "shopify:\/\/shop_images\/Main_52f8e304-92d9-4a36-82af-50df8fe31c69.jpg",
+    "sections": {
+      "layout-announcement-bar": {
+        "type": "layout-announcement-bar",
+        "settings": {
+          "visible": false,
+          "home_page_only": true,
+          "content": "Lorem ipsum dolor sit amet."
+        }
+      },
+      "layout-header": {
+        "type": "layout-header",
+        "settings": {
+        }
+      },
+      "layout-footer": {
+        "type": "layout-footer",
+        "settings": {
+          "social_instagram_visible": false,
+          "social_instagram_link": "",
+          "social_twitter_visible": false,
+          "social_twitter_link": "",
+          "social_facebook_visible": false,
+          "social_facebook_link": "",
+          "social_youtube_visible": false,
+          "social_youtube_link": ""
+        }
+      },
+      "layout-mobile-navigation": {
+        "type": "layout-mobile-navigation",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
 }

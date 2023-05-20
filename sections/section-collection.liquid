@@ -6,12 +6,13 @@
 
     <div class="hidden lg:flex justify-end items-center">
       <a href="{{ routes.collections_url }}" class="button button-secondary flex justify-center items-center">
-        {{ 'action.view_more' | t }} {% render 'icon-chevron-right', class: 'w-4 h-auto ml-1' style: 'margin-top: 2px;' %}
+        {{ 'action.view_more' | t }}
+        {% render 'icon-chevron-right', class: 'w-4 h-auto ml-1', style: 'margin-top: 2px;' %}
       </a>
     </div>
   </div>
 
-  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8">
+  <div class="grid grid-cols-12 gap-y-8">
     {% assign collection = collections[section.settings.collection_featured] %}
 
     {% unless collection == blank %}

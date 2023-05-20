@@ -21,7 +21,7 @@
       {% endfor %}
     {% else %}
       {% for i in (1..4) %}
-        <div class="translate-x-72">
+        <div class="">
           {% capture placeholder %}product-{{ i }}{% endcapture %}
           {{ placeholder | placeholder_svg_tag: 'w-full h-full border' }}
         </div>

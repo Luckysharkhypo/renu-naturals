@@ -12,7 +12,7 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-12 gap-y-8">
+  <div class="grid grid-cols-12 gap-y-8 selected-products">
     {% assign collection = collections[section.settings.collection_featured] %}
 
     {% unless collection == blank %}
@@ -21,7 +21,7 @@
       {% endfor %}
     {% else %}
       {% for i in (1..4) %}
-        <div class="">
+        <div class="staggering-selected-product">
           {% capture placeholder %}product-{{ i }}{% endcapture %}
           {{ placeholder | placeholder_svg_tag: 'w-full h-full border' }}
         </div>

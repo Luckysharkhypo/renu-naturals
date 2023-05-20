@@ -17,11 +17,11 @@
 
     {% unless collection == blank %}
       {% for product in collection.products limit: section.settings.collection_products_limit %}
-        {% render 'layout-product', product: product %}
+        {% render 'layout-product', class: 'staggering-effect', product: product %}
       {% endfor %}
     {% else %}
       {% for i in (1..4) %}
-        <div class="staggering-selected-product">
+        <div class="staggering-effect">
           {% capture placeholder %}product-{{ i }}{% endcapture %}
           {{ placeholder | placeholder_svg_tag: 'w-full h-full border' }}
         </div>

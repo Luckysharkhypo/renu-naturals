@@ -1,20 +1,35 @@
-const showSelectedProducts = () => {
-  const products = document.querySelectorAll(
-    ".selected-products .staggering-selected-product"
+const staggeringEffect = () => {
+  const selectedProducts = document.querySelectorAll(
+    ".selected-products .staggering-effect"
   );
 
-  for (let i = 0; i < products.length; i++) {
+  for (let i = 0; i < selectedProducts.length; i++) {
     const windowHeight = window.innerHeight;
-    const elementTop = products[i].getBoundingClientRect().top;
+    const elementTop = selectedProducts[i].getBoundingClientRect().top;
     const offset = 50;
-    console.log(windowHeight, elementTop);
 
     if (elementTop < windowHeight - offset) {
-      products[i].classList.add("is-shown");
+      selectedProducts[i].classList.add("is-shown");
     } else {
-      products[i].classList.remove("is-shown");
+      selectedProducts[i].classList.remove("is-shown");
+    }
+  }
+
+  const storeProduct = document.querySelectorAll(
+    ".our-store .staggering-effect"
+  );
+
+  for (let i = 0; i < storeProduct.length; i++) {
+    const windowHeight = window.innerHeight;
+    const elementTop = storeProduct[i].getBoundingClientRect().top;
+    const offset = 50;
+
+    if (elementTop < windowHeight - offset) {
+      storeProduct[i].classList.add("is-shown");
+    } else {
+      storeProduct[i].classList.remove("is-shown");
     }
   }
 };
 
-window.addEventListener("scroll", showSelectedProducts);
+window.addEventListener("scroll", staggeringEffect);

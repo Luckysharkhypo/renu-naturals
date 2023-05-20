@@ -32,16 +32,19 @@
         "image-1": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg"
           }
         },
         "image-2": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Main_52f8e304-92d9-4a36-82af-50df8fe31c69.jpg"
           }
         },
         "image-3": {
           "type": "image",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg"
           }
         }
       },
